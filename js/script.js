@@ -105,25 +105,6 @@ const icons = [
 	}
 ];
 
-const containerHTML = document.querySelector('.icons-content');
-
-function filterIcons(choice,originalList){
-	const newArray = originalList.filter((element) => {
-		if(choice === 'all'){
-			return true;
-		}
-
-		if (choice === icon.type){
-			return true;
-		}
-		return false;
-	})
-
-	return newArray
-}
-
-const iconsFiltered= filterIcons('all', icons);
-
 icons.forEach((icon)=> {
 
     const {name , prefix , family , type} = icon;
