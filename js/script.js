@@ -105,10 +105,29 @@ const icons = [
 	}
 ];
 
+
+
+function filterIcons(choice, originalList){
+	const newArray = originalList.filter((icon) => {
+		if (choice=== 'all'){
+			return true;
+		}
+		if (choice=== icon.type){
+			return true;
+		}
+		return false;
+	})
+	return newArray
+}
+
+function listIcons(filter){
+
+const iconsFiltered = filterIcons(filter, icons);
+
 const containerHTML = document.querySelector('.icons-content');
+containerHTML.innerHTML ='';
 
-
-icons.forEach((icon)=> {
+iconsFiltered.forEach((icon)=> {
 
     const {name , prefix , family , type} = icon;
 
@@ -125,4 +144,13 @@ icons.forEach((icon)=> {
 		</div>	
 	</div>
     `
+});
+}
+
+listIcons('all');
+
+const selectElement = document.querySelector('.type-select');
+
+selectElement.addEventListener('change', (event) => {
+	listIcons(event.target.value);
 });
