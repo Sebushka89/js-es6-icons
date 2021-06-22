@@ -39,3 +39,15 @@
 .user{
     color: purple;
 }
+.lightskyblue{
+    background-color: lightskyblue;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.title{
+    color: lightskyblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 500;
+}
