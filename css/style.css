@@ -1,11 +1,11 @@
+.icons-container{
+    background-color: #ddd;
+}
 .icon-card{
     flex-basis: calc(100% / 5)!important;
     max-width: calc(100% / 5)!important;
     padding-top: 15px;
     padding-bottom: 15px;
-}
-.icons-container{
-    background-color: #ddd;
 }
 .icon-card-inner{
     background-color: #fff;
@@ -16,7 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    align-content: center;
     box-shadow: 2px 2px 2px 2px #888888;
 }
 .icon-card-inner .icon{
@@ -29,6 +29,7 @@
     font-weight: 800;
     width: 100%;
 }
+/*la seconda milestone*/
 .animal{
     color: blue;
 }

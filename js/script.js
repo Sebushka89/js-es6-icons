@@ -1,4 +1,4 @@
-//FACCIAMO INSEME IL TUTTO IN LC, oggi pomeriggio poi da soli 
+
 //Milestone 1
 //Partendo dalla seguente struttura dati , mostriamo in pagina tutte le icone disponibili come da layout.
 //Milestone 2
@@ -112,7 +112,8 @@ icons.forEach((icon)=> {
 
     const {name , prefix , family , type} = icon;
 
-    containerHTML.innerHTML +=`
+    containerHTML.innerHTML +=
+	`
     <div class="icon-card col">
 		<div class="icon-card-inner">
 			<div class ="icon ${type}">
