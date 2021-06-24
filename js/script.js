@@ -200,7 +200,7 @@ const usersAll= icons.filter ((icons)=>{
 
 const selectElement = document.querySelector('.type-select');
 
-selectElement.addEventListener("click", function() {
+selectElement.addEventListener("change", function() {
 
 	const containerHTML = document.querySelector('.icons-content');
 
